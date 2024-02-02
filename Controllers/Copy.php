@@ -8,7 +8,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $array_error        = $_FILES['files']['error'];
 
     $delivery = new Delivery();
-    $response = $delivery->deliver($array_tmp_names, $array_names);
+    $response = $delivery->separate($array_tmp_names, $array_names, ['pdf', 'xls', 'xlsx', 'sql']);
     
     echo json_encode($response);
 
