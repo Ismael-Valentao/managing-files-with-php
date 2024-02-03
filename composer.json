@@ -1,0 +1,19 @@
+{
+    "name": "plus-ultra/file-system",
+    "description": "Files manager using php",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Src\\": "src/",
+            "Src\\Classes\\":"src/classes/",
+            "Controllers\\":"Controllers/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ismael-Valentao",
+            "email": "chizianeismaelvalentao@gmail.com"
+        }
+    ],
+    "require": {}
+}
